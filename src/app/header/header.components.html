@@ -1,0 +1,17 @@
+<div class="header">
+  <a routerLink="/about" class="logo">
+    Yehor
+  </a>
+  <div class="menu">
+    <a *ngFor="let item of list"
+       (click)="onSelectItem(item)"
+       [class.active_header]="item == activeItem"
+       routerLink="/{{item}}"
+       class="navigation_link">
+      {{ item }}
+    </a>
+  </div>
+</div>
+
+
+

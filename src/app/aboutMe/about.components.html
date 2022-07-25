@@ -1,0 +1,63 @@
+<div id="about">
+  <div class="about_header">
+    <div class="about_text">Welcome</div>
+    <div class="about_signatures">
+      <fa-icon [icon]="faBatteryFull" style="color: #01c853"></fa-icon>
+    </div>
+  </div>
+  <div class="container">
+    <div class="left_side">
+      <div class="photo"></div>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/profile.php?id=100010805199760" target="_blank">
+          <fa-icon [icon]="faFacebook"></fa-icon>
+          <div>Facebook</div>
+        </a></li>
+        <li><a href="https://www.instagram.com/yegizavr/" target="_blank">
+          <fa-icon [icon]="faInstagram"></fa-icon>
+          <div>Instagram</div>
+        </a></li>
+        <li><a href="https://t.me/yegizavr" target="_blank">
+          <fa-icon [icon]="faTelegramPlane"></fa-icon>
+          <div>Telegram</div>
+        </a></li>
+        <li><a href="https://github.com/Yegi1824" target="_blank">
+          <fa-icon [icon]="faGithub"></fa-icon>
+          <div>GutHub</div>
+        </a></li>
+      </ul>
+    </div>
+    <div class="right_side">
+      <div class="name">
+        Ishchenko Yehor
+      </div>
+      <div class="work">
+        Front-end developer
+      </div>
+      <div class="info">
+        <ul class="info_left">
+          <li *ngFor="let oMyInfo of aoMyInfo">{{oMyInfo.sName}}</li>
+        </ul>
+        <ul class="info_right">
+          <li *ngFor="let oMyInfo of aoMyInfo">
+            <div>
+              <a href="https://www.icore.com.ua/" target="_blank" *ngIf="oMyInfo.sKey === 'experience'">iCore</a>
+            </div>
+            <a class="info_right_item" *ngIf="oMyInfo.sType === 'string'" [innerHTML]="oMyInfo.sValue"></a>
+            <a *ngIf="oMyInfo.sType === 'number'">{{oMyInfo.sValue}}</a>
+            <a href="https://goo.gl/maps/eEJ6zxnTZngDzQM68"
+               target="_blank"
+               *ngIf="oMyInfo.sType === 'location'">{{oMyInfo.sValue}}</a>
+            <a href="mailto: {{oMyInfo.sValue}}"
+               *ngIf="oMyInfo.sType === 'email'">{{oMyInfo.sValue}}</a>
+            <a href="tel: {{oMyInfo.sValue}}"
+               *ngIf="oMyInfo.sType === 'tel'">{{oMyInfo.sValue}}</a>
+            <fa-icon [icon]="faCalendarCheck" style="color: #01c853; margin-left: 10px;"
+                     *ngIf="oMyInfo.sKey === 'freelance'"></fa-icon>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

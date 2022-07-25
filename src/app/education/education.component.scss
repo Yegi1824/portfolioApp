@@ -1,0 +1,314 @@
+@-webkit-keyframes blink_e {
+  100% {
+    color: black;
+  }
+  50% {
+    color: orangered;
+  }
+  0% {
+    color: black;
+  }
+}
+
+@keyframes blink_e {
+  100% {
+    color: black;
+  }
+  50% {
+    color: orangered;
+  }
+  0% {
+    color: black;
+  }
+}
+@keyframes showLink {
+  100%{
+    display: block;
+  }
+  0%{
+    display: none;
+  }
+}
+@keyframes hideLink {
+  100%{
+    display: none;
+  }
+  0%{
+    display: block;
+  }
+}
+
+@keyframes showLink {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes showLink {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+
+#education {
+  opacity: 0.8;
+  width: 100%;
+  height: 570px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03),
+  0 3px 1px -2px rgba(0, 0, 0, 0.03),
+  0 1px 5px 0 rgba(0, 0, 0, 0.03);
+  margin-bottom: 30px !important;
+  position: relative;
+  top: 150px;
+  border-radius: 10px;
+
+  .education_header {
+    height: 65px;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 64px;
+
+    .education_text {
+      color: orangered;
+      font-size: 25px;
+      margin-left: 40px;
+    }
+
+    #blink {
+      -webkit-animation: blink_e 1s linear infinite;
+      animation: blink_e 1s linear infinite;
+    }
+
+    .education_signatures {
+      font-size: 25px;
+      text-align: right;
+      margin-right: 20px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .container_education {
+    width: 90%;
+    margin: 0 auto;
+    height: 435px;
+
+    &::before {
+      top: 110px;
+      bottom: 50px;
+      position: absolute;
+      content: " ";
+      width: 1px;
+      left: 50%;
+      background: #bababa;
+    }
+
+    .education_text {
+      font-size: 30px;
+      color: #444444;
+      margin: 25px 25px;
+      text-align: center;
+    }
+
+    .education_block {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: 50px;
+
+
+      .text_inside {
+        padding: 25px 30px;
+
+        .first_text {
+          font-size: 20px;
+          color: black;
+        }
+
+        .second_text {
+          font-size: 13px;
+          color: #848484;
+          margin-top: 30px;
+        }
+
+        .third_text {
+          font-size: 17px;
+          color: #444444;
+          margin-top: 10px;
+        }
+      }
+
+      .education_left {
+        width: 50%;
+
+        .circle_1 {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #2879ff;
+          left: 49.26%;
+          top: 150px;
+        }
+
+        .circle_2 {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #fec107;
+          left: 49.26%;
+          top: 220px;
+        }
+
+        .circle_3 {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #01c853;
+          left: 49.26%;
+          top: 345px;
+        }
+
+        .circle_4 {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #ff3d00;
+          left: 49.26%;
+          top: 415px;
+        }
+
+
+        .education_university {
+          width: 80%;
+          height: 140px;
+          border-top: 4px solid #2879ff;
+          border-left: 1px solid #2879ff;
+          border-right: 1px solid #2879ff;
+          border-bottom: 1px solid #2879ff;
+          box-shadow: 0 2px 20px 0 rgb(40, 121, 255, 1),
+          0 3px 1px -2px rgba(40, 121, 255, 1),
+          0 1px 5px 0 rgba(40, 121, 255, 1);
+          border-radius: 10px;
+
+
+          &::after {
+            position: relative;
+            top: -110px;
+            left: 340px;
+            display: inline-block;
+            border-top: 10px solid transparent;
+            border-left: 10px solid #2879ff;
+            border-right: 0 solid #2879ff;
+            border-bottom: 10px solid transparent;
+            content: " ";
+          }
+        }
+
+        .education_lvlup {
+          width: 80%;
+          height: 140px;
+          margin-top: 50px;
+          border-top: 4px solid #01c853;
+          border-left: 1px solid #01c853;
+          border-right: 1px solid #01c853;
+          border-bottom: 1px solid #01c853;
+          box-shadow: 0 2px 20px 0 rgb(1, 200, 83, 1),
+          0 3px 1px -2px rgba(1, 200, 83, 1),
+          0 1px 5px 0 rgba(1, 200, 83, 1);
+          border-radius: 10px;
+
+          &::after {
+            position: relative;
+            top: -130px;
+            left: 340px;
+            display: inline-block;
+            border-top: 10px solid transparent;
+            border-left: 10px solid #01c853;
+            border-right: 0 solid #01c853;
+            border-bottom: 10px solid transparent;
+            content: " ";
+          }
+        }
+
+      }
+
+      .education_right {
+        width: 50%;
+
+        .education_cambridge {
+          width: 80%;
+          height: 140px;
+          float: right;
+          margin-top: 70px;
+          border-top: 4px solid #fec107;
+          border-left: 1px solid #fec107;
+          border-right: 1px solid #fec107;
+          border-bottom: 1px solid #fec107;
+          box-shadow: 0 2px 20px 0 rgb(254, 193, 7, 1),
+          0 3px 1px -2px rgba(254, 193, 7, 1),
+          0 1px 5px 0 rgba(254, 193, 7, 1);
+          border-radius: 10px;
+
+          &::after {
+            position: relative;
+            top: -110px;
+            right: 12px;
+            display: inline-block;
+            border-top: 10px solid transparent;
+            border-left: 0 solid #fec107;
+            border-right: 10px solid #fec107;
+            border-bottom: 10px solid transparent;
+            content: " ";
+          }
+        }
+
+        .education_school {
+          width: 80%;
+          border-top: 4px solid #ff3d00;
+          border-left: 1px solid #ff3d00;
+          border-right: 1px solid #ff3d00;
+          border-bottom: 1px solid #ff3d00;
+          box-shadow: 0 2px 20px 0 rgb(255, 61, 0, 1),
+          0 3px 1px -2px rgb(255, 61, 0, 1),
+          0 1px 5px 0 rgb(255, 61, 0, 1);
+          border-radius: 10px;
+          height: 140px;
+          margin-top: 50px;
+          float: right;
+
+          &::after {
+            position: relative;
+            top: -110px;
+            right: 11px;
+            display: inline-block;
+            border-top: 10px solid transparent;
+            border-left: 0 solid #ff3d00;
+            border-right: 10px solid #ff3d00;
+            border-bottom: 10px solid transparent;
+            content: " ";
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+
+}
