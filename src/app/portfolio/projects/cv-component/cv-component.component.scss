@@ -1,0 +1,335 @@
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+.avatar {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 12px solid #ffffff;
+  margin-top: 40px;
+  left: 350px;
+  top: -50px;
+}
+.block_avatar{
+  width: 80%;
+  height: 150px;
+  background: #191919;
+  border-bottom-right-radius: 40px;
+  float: left;
+
+}
+.block_avatar_zaliv{
+  width: 20%;
+  height: 50px;
+  background: #191919;
+  float: left;
+}
+.block_avatar_social{
+  width: 350px;
+  height: 150px;
+  background: white;
+  float: left;
+  margin-bottom: 60px;
+  border-top-left-radius: 70px;
+
+}
+.block_avatar_social_border{
+  width: 20%;
+  height: 150px;
+  background: #191919;
+  float: left;
+  margin-bottom: 60px;
+
+}
+.fab{
+  font-size: 50px;
+}
+.fa-facebook-f, .fa-instagram, .fa-whatsapp{
+  text-align: center;
+  margin: 35px;
+  color: black;
+  margin-top: 50px;
+}
+.slova{
+  text-transform: uppercase;
+  color: white;
+  width: 130px;
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 80px;
+  background: pink;
+}
+.shadow {
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.name{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Baloo Tamma 2', cursive;
+  font-weight: bold;
+  color: #191919;
+  line-height: 100px;
+
+}
+.proff{
+  height: 56px;
+  width: 465px;
+  background: #191919;
+  color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+p{
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Baloo Tamma 2', cursive;
+  text-transform: uppercase;
+  padding: 18px 0px;
+}
+.main{
+  width: 925px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+.info_1{
+  font-size: 17px;
+  margin-top: 48px;
+  max-width: 33%;
+  float: left;
+  width: 275px;
+  height: 55px;
+  font-family: 'Baloo Tamma 2', cursive;
+  border-right: 1px solid #191919;
+  padding-right: 10px;
+}
+.info_2{
+  font-size: 17px;
+  margin-top: 48px;
+  max-width: 33%;
+  float: left;
+  width: 255px;
+  height: 55px;
+  font-family: 'Baloo Tamma 2', cursive;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+}
+.info_3{
+  font-size: 17px;
+  margin-top: 48px;
+  max-width: 33%;
+  float: left;
+  width: 255px;
+  height: 55px;
+  font-family: 'Baloo Tamma 2', cursive;
+  text-align: center;
+  margin-left: 0px;
+  padding-left: 40px;
+  border-left: 1px solid #191919;
+}
+
+.fa-envelope, .fa-phone, .fa-home {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+.far, .fas{
+  max-width: 47px;
+  max-height: 47px;
+  border-radius: 50px;
+  background: #191919;
+}
+.profile{
+  color: #191919;
+  width: 925px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid #191919;
+  font-family: 'Baloo Tamma 2', cursive;
+  border-top: 1px solid #191919;
+}
+.text{
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+
+}
+.profile_text{
+  font-family: 'Baloo Tamma 2', cursive;
+  margin-bottom: 0px;
+  padding-bottom: 55px;
+  font-size: 17px;
+}
+.text_line{
+  color: #191919;
+}
+.skills{
+  width: 835px;
+  margin: 0 auto;
+  font-family: 'Baloo Tamma 2', cursive;
+
+  flex-wrap: wrap;
+}
+.skills_1{
+  width: 415px;
+  float: left;
+  font-family: 'Baloo Tamma 2', cursive;
+  border-right: 1px solid #191919;
+  flex-basis: 50%;
+}
+.skills_2{
+  height: 670px;
+  width: 350px;
+
+  padding-left: 58px;
+  flex-basis: 50%;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+.language{
+  margin-top: 40px;
+  margin-left: 47px;
+  font-size: 26px;
+  font-family: 'Baloo Tamma 2', cursive;
+  text-transform: uppercase;
+
+
+}
+.education{
+  margin-top: 40px;
+  left: 40px;
+  margin-left: 47px;
+  font-size: 26px;
+  font-family: 'Baloo Tamma 2', cursive;
+  text-transform: uppercase;
+
+}
+.language_stats_1{
+  margin-top: 25px;
+  font-size: 17px;
+  margin-left: 32px;
+  margin-bottom: 40px;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+.language_stats{
+  margin-top: 25px;
+  font-size: 17px;
+  margin-left: 32px;
+  margin-bottom: 40px;
+  font-family: 'Baloo Tamma 2', cursive;
+
+}
+.lang_line_1{
+  width: 170px;
+  height: 15px;
+  background: #191919;
+  border-radius: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 54px;
+
+}
+.lang_line_2{
+  width: 150px;
+  height: 15px;
+  background: #191919;
+  border-radius: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 54px;
+}
+.lang_line_3{
+  width: 130px;
+  height: 15px;
+  background: #191919;
+  border-radius: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 54px;
+}
+.lang_line_4{
+  width: 170px;
+  height: 15px;
+  background: #191919;
+  border-radius: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 54px;
+
+}
+.lang_line_5{
+  width: 150px;
+  height: 15px;
+  background: #191919;
+  border-radius: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 54px;
+}
+.lang_line_6{
+  width: 130px;
+  height: 15px;
+  background: #191919;
+  border-radius: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 54px;
+}
+.lang_line_7{
+  width: 130px;
+  height: 15px;
+  background: #191919;
+  border-radius: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+  margin-right: 54px;
+}
+.education_1{
+  font-size: 13px;
+  font-family: 'Baloo Tamma 2', cursive;
+  margin-top: 15px;
+  position: relative;
+  left: 40px;
+}
+.education_2{
+  position: relative;
+  font-size: 13px;
+  font-family: 'Baloo Tamma 2', cursive;
+  margin-top: 12px;
+  left: 40px;
+}
+.mail{
+  color: #191919;
+  text-decoration: none;
+}
+.mail:hover{
+  color: #191919;
+  text-decoration: none;
+}
+.year{
+  text-decoration: underline;
+}

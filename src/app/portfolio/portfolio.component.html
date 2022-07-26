@@ -1,77 +1,80 @@
 <div id="portfolio">
   <div class="portfolio_header">
-    <div class="portfolio_text">Previous Projects</div>
+    <div class="portfolio_text">My Projects</div>
     <div class="portfolio_signatures">
       <fa-icon [icon]="faBatteryHalf" style="color: orange"></fa-icon>
     </div>
   </div>
-  <div class="container_portfolio">
-    <div class="portfolio_block">
-      <div class="block_bg">
-        <span>Portfolio</span>
-      </div>
+  <div class="container_portfolio" *ngIf="!bShowProject">
+    <div class="portfolio_block" (click)="onOpenProject(0)">
+      <div class="block_bg"></div>
       <div class="block_footer">
-        <div><a href="#">
-          <fa-icon [icon]="faEye"></fa-icon>
-        </a></div>
-        <span><a href="#"><fa-icon [icon]="faBars"></fa-icon></a></span>
+        <div>CV</div>
+        <div>
+          <a href="#">
+            <fa-icon [icon]="faEye"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
     <div class="portfolio_block">
-      <div class="block_bg">
-        <span>Page making</span>
-      </div>
+      <div class="block_bg"></div>
       <div class="block_footer">
-        <div><a href="#">
-          <fa-icon [icon]="faEye"></fa-icon>
-        </a></div>
-        <span><a href="#"><fa-icon [icon]="faBars"></fa-icon></a></span>
+        <div>PSD to HTML</div>
+        <div>
+          <a href="#">
+            <fa-icon [icon]="faEye"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
     <div class="portfolio_block">
-      <div class="block_bg">
-        <span>BootStrap3</span>
-      </div>
+      <div class="block_bg"></div>
       <div class="block_footer">
-        <div><a href="#">
-          <fa-icon [icon]="faEye"></fa-icon>
-        </a></div>
-        <span><a href="#"><fa-icon [icon]="faBars"></fa-icon></a></span>
+        <div>BootStrap3</div>
+        <div>
+          <a href="#">
+            <fa-icon [icon]="faEye"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
     <div class="portfolio_block">
-      <div class="block_bg">
-        <span>Incoming...</span>
-      </div>
+      <div class="block_bg"></div>
       <div class="block_footer">
-        <div><a href="#">
-          <fa-icon [icon]="faEye"></fa-icon>
-        </a></div>
-        <span><a href="#"><fa-icon [icon]="faBars"></fa-icon></a></span>
+        <div>Incoming...</div>
+        <div>
+          <a href="#">
+            <fa-icon [icon]="faEye"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
     <div class="portfolio_block">
-      <div class="block_bg">
-        <span>Incoming...</span>
-      </div>
+      <div class="block_bg"></div>
       <div class="block_footer">
-        <div><a href="#">
-          <fa-icon [icon]="faEye"></fa-icon>
-        </a></div>
-        <span><a href="#"><fa-icon [icon]="faBars"></fa-icon></a></span>
+        <div>Incoming...</div>
+        <div>
+          <a href="#">
+            <fa-icon [icon]="faEye"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
     <div class="portfolio_block">
-      <div class="block_bg">
-        <span>Incoming...</span>
-      </div>
+      <div class="block_bg"></div>
       <div class="block_footer">
-        <div><a href="#">
-          <fa-icon [icon]="faEye"></fa-icon>
-        </a></div>
-        <span><a href="#"><fa-icon [icon]="faBars"></fa-icon></a></span>
+        <div>Incoming...</div>
+        <div>
+          <a href="#">
+            <fa-icon [icon]="faEye"></fa-icon>
+          </a>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container_project" *ngIf="bShowProject">
+    <app-cv-component></app-cv-component>
   </div>
 </div>
 
