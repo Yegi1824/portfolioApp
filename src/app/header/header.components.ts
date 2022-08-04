@@ -17,6 +17,9 @@ export class HeaderComponents implements OnInit{
 
   ngOnInit() {
     this.activeItem = this.pathname.split('/')[1];
+    if (!this.activeItem) {
+      this.activeItem = 'about'
+    }
   }
 
   public onSelectItem(item: string): void {
