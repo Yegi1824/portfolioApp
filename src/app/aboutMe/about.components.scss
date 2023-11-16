@@ -56,14 +56,14 @@
 }
 
 #about {
-  opacity: 0.8;
-  width: 100%;
+  opacity: 0.9;
+  width: 940px;
+  margin: 0 auto;
   height: 500px;
   background-color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03),
   0 3px 1px -2px rgba(0, 0, 0, 0.03),
   0 1px 5px 0 rgba(0, 0, 0, 0.03);
-  margin-bottom: 30px !important;
   position: relative;
   top: 150px;
   border-radius: 10px;
@@ -75,12 +75,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    line-height: 64px;
+    align-items: center;
+    padding: 0 26px;
 
     .about_text {
       color: #01c853;
       font-size: 25px;
-      margin-left: 40px;
     }
 
     #blink {
@@ -91,7 +91,6 @@
     .about_signatures {
       font-size: 25px;
       text-align: right;
-      margin-right: 20px;
       color: white;
       text-decoration: none;
     }
@@ -115,7 +114,7 @@
         border-radius: 50%;
         border: 10px solid #01c853;
         margin: 30px 0 0 50px;
-        background: url("../img/myPhoto.jpg");
+        background: url("../../assets/img/IMG_09972.jpg");
         background-size: cover;
       }
 
@@ -211,5 +210,77 @@
   }
 }
 
+@media (max-width: 970px) {
+  #about {
+    width: 90% !important;;
+    top: 15px !important;
+    height: unset !important;
+    padding: 0 0 15px 0;
+  }
 
+  .container {
+    flex-direction: column !important;
+    height: unset !important;
+  }
 
+  .name {
+    margin: 0 !important;
+    margin-top: 8px !important;
+    text-align: center;
+  }
+
+  .work {
+    margin: 0 !important;
+    margin-top: 8px !important;
+    text-align: center;
+  }
+
+  .info {
+    margin: 0 !important;
+    margin-top: 8px !important;
+    justify-content: space-between;
+  }
+
+  .info_left {
+    width: fit-content !important;
+  }
+
+  .info_right {
+    margin-left: 5px;
+    width: fit-content !important;
+  }
+
+  .left_side {
+    width: 100% !important;
+  }
+
+  .right_side {
+    width: 100% !important;;
+  }
+
+  .social {
+    /*width: 90% !important;
+    height: 50px !important;
+    margin: 0 auto !important;
+    margin-top: 20px !important;*/
+    display: none !important;
+  }
+
+  .photo {
+    width: 150px !important;
+    height: 150px !important;
+    margin: 0 auto !important;
+    margin-top: 8px !important;
+    border-width: 4px !important;
+  }
+
+  .about_header {
+    height: 45px !important;
+    align-items: center !important;
+    line-height: unset !important;
+  }
+
+  .about_text {
+    font-size: 20px !important;
+  }
+}

@@ -2,7 +2,7 @@
   <div class="about_header">
     <div class="about_text">Welcome</div>
     <div class="about_signatures">
-      <fa-icon [icon]="faBatteryFull" style="color: #01c853"></fa-icon>
+      <fa-icon [icon]="faHandPeace" style="color: #01c853"></fa-icon>
     </div>
   </div>
   <div class="container">
@@ -41,16 +41,19 @@
         <ul class="info_right">
           <li *ngFor="let oMyInfo of aoMyInfo">
             <div>
-              <a href="https://www.icore.com.ua/" target="_blank" *ngIf="oMyInfo.sKey === 'experience'">iCore</a>
+              <a href="https://www.icore.com.ua/" target="_blank" *ngIf="oMyInfo.sKey === 'experience'">iCore | </a>
+              <a class="info_right_item" *ngIf="oMyInfo.sType === 'string'" [innerHTML]="oMyInfo.sValue"></a>
             </div>
-            <a class="info_right_item" *ngIf="oMyInfo.sType === 'string'" [innerHTML]="oMyInfo.sValue"></a>
-            <a *ngIf="oMyInfo.sType === 'number'">{{oMyInfo.sValue}}</a>
+            <a class="info_right_item" *ngIf="oMyInfo.sType === 'number'">{{oMyInfo.sValue}}</a>
             <a href="https://goo.gl/maps/eEJ6zxnTZngDzQM68"
+               class="info_right_item"
                target="_blank"
                *ngIf="oMyInfo.sType === 'location'">{{oMyInfo.sValue}}</a>
             <a href="mailto: {{oMyInfo.sValue}}"
+               class="info_right_item"
                *ngIf="oMyInfo.sType === 'email'">{{oMyInfo.sValue}}</a>
             <a href="tel: {{oMyInfo.sValue}}"
+               class="info_right_item"
                *ngIf="oMyInfo.sType === 'tel'">{{oMyInfo.sValue}}</a>
             <fa-icon [icon]="faCalendarCheck" style="color: #01c853; margin-left: 10px;"
                      *ngIf="oMyInfo.sKey === 'freelance'"></fa-icon>

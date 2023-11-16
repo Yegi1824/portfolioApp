@@ -1,0 +1,57 @@
+<div class="footerMenu">
+  <div class="footerMenu__menu">
+    <ul>
+      <li class="footerMenu__menu__list"
+          [routerLink]="['/about']"
+          routerLinkActive="active">
+        <a>
+              <span class="footerMenu__menu__list__icon">
+                      <fa-icon [icon]="faUser" style="color: #01c853"></fa-icon>
+              </span>
+          <span class="footerMenu__menu__list__text">About me</span>
+        </a>
+      </li>
+      <li class="footerMenu__menu__list"
+          [routerLink]="['/skills']"
+          routerLinkActive="active">
+        <a>
+              <span class="footerMenu__menu__list__icon deals">
+                      <fa-icon [icon]="faGear" style="color: #01c853"></fa-icon>
+              </span>
+          <span class="footerMenu__menu__list__text">Skills</span>
+        </a>
+      </li>
+      <li class="footerMenu__menu__list"
+          [routerLink]="['/portfolio']"
+          routerLinkActive="active">
+        <a>
+              <span class="footerMenu__menu__list__icon history">
+                      <fa-icon [icon]="faFile" style="color: #01c853"></fa-icon>
+              </span>
+          <span class="footerMenu__menu__list__text">Portfolio</span>
+        </a>
+      </li>
+      <li class="footerMenu__menu__list"
+          [routerLink]="['/education']"
+          routerLinkActive="active">
+        <a>
+              <span class="footerMenu__menu__list__icon settings">
+                      <fa-icon [icon]="faBook" style="color: #01c853"></fa-icon>
+              </span>
+          <span class="footerMenu__menu__list__text">Education</span>
+        </a>
+      </li>
+      <li class="footerMenu__menu__list"
+          [routerLink]="['/contacts']"
+          routerLinkActive="active">
+        <a>
+              <span class="footerMenu__menu__list__icon wallet">
+                      <fa-icon [icon]="faAddressCard" style="color: #01c853"></fa-icon>
+              </span>
+          <span class="footerMenu__menu__list__text">Contact me</span>
+        </a>
+      </li>
+      <div class="footerMenu__menu__indicator"></div>
+    </ul>
+  </div>
+</div>

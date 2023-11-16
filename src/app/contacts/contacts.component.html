@@ -2,23 +2,63 @@
   <div class="contacts_header">
     <div class="contacts_text">Contact Me</div>
     <div class="contacts_signatures">
-      <fa-icon class="blink_battery" [icon]="faBatteryEmpty" style="color: red"></fa-icon>
+      <fa-icon class="blink_battery" [icon]="faAddressBook" style="color: rgb(0,255,255)"></fa-icon>
     </div>
   </div>
   <div class="container_contacts">
     <div class="left_side">
-      <form action="" class="ui-form">
+      <form [formGroup]="form" (ngSubmit)="submit()" class="ui-form">
         <h3>If you were interested</h3>
         <div class="form-row">
-          <input type="text" id="name" required autocomplete="off"><label for="name">Name</label>
+          <input type="text" id="name" formControlName="name"
+                 required
+                 autocomplete="off">
+          <label for="name">Name (Company) <span style="color: red">*</span></label>
+          <div class="errorMessage"
+               [ngStyle]="getControls('name').errors && getControls('name').errors['required'] && getControls('name').touched
+                ? {opacity: 1} : {opacity: 0}">
+            *Required field
+          </div>
         </div>
         <div class="form-row">
-          <input type="text" id="email" required autocomplete="off"><label for="email">Email</label>
+          <input type="text"
+                 id="email"
+                 required
+                 formControlName="email"
+                 autocomplete="off">
+          <label for="email">Email <span style="color: red">*</span></label>
+          <div class="errorMessage"
+               *ngIf="!(getControls('email').errors && getControls('email').errors['email'] && getControls('email').touched)"
+               [ngStyle]="getControls('email').errors && getControls('email').errors['required'] && getControls('email').touched
+                ? {opacity: 1} : {opacity: 0}">
+            *Required field
+          </div>
+          <div class="errorMessage"
+               *ngIf="!(getControls('email').errors && getControls('email').errors['required'] && getControls('email').touched)"
+               [ngStyle]="getControls('email').errors && getControls('email').errors['email'] && getControls('email').touched
+                ? {opacity: 1} : {opacity: 0}">
+            *Wrong email
+          </div>
         </div>
         <div class="form-row">
-          <input type="text" id="text" required autocomplete="off"><label for="text">Message</label>
+          <input type="text"
+                 id="text"
+                 required
+                 formControlName="message"
+                 autocomplete="off">
+          <label for="text">Message <span style="color: red">*</span></label>
+          <div class="errorMessage"
+               [ngStyle]="getControls('message').errors && getControls('message').errors['required'] && getControls('message').touched
+                ? {opacity: 1} : {opacity: 0}">
+            *Required field
+          </div>
         </div>
-        <p><input type="submit" (click)="submit()" value="Text Me!"></p>
+        <p>
+          <input *ngIf="!bSendingMessageInProcess; else isSending" type="submit" value="Text Me!">
+          <ng-template #isSending>
+            <mat-spinner style="margin: 0 auto;" diameter="25"></mat-spinner>
+          </ng-template>
+        </p>
       </form>
 
 
@@ -26,8 +66,9 @@
 
     <div class="right_side">
       <iframe
+        class="mapiFrame"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.4591639508935!2d35.04518521562547!3d48.46690567925103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e87451ed89%3A0x336dbd257e4462a8!2sHlinky%20St%2C%2018%2C%20Dnipropetrovs&#39;k%2C%20Dnipropetrovs&#39;ka%20oblast%2C%2049000!5e0!3m2!1sen!2sua!4v1597222034921!5m2!1sen!2sua"
-        width="450" height="350" frameborder="0" style="border:3px solid #01c853; border-radius: 10px"
+        width="100%" frameborder="0"
         allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </div>

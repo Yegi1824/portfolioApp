@@ -14,7 +14,7 @@
     color: black;
   }
   50% {
-    color: red;
+    color: rgb(0,255,255);
   }
   0%{
     color: black;
@@ -25,7 +25,7 @@
     color: black;
   }
   50% {
-    color: red;
+    color: rgb(0,255,255);
   }
   0%{
     color: black;
@@ -36,7 +36,7 @@
     color: black;
   }
   50% {
-    color: red;
+    color: rgb(0,255,255);
   }
   0%{
     color: black;
@@ -62,14 +62,14 @@
 }
 
 #contacts {
-  opacity: 0.8;
-  width: 100%;
+  opacity: 0.9;
+  width: 940px;
+  margin: 0 auto;
   height: 500px;
   background-color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03),
   0 3px 1px -2px rgba(0, 0, 0, 0.03),
   0 1px 5px 0 rgba(0, 0, 0, 0.03);
-  margin-bottom: 30px !important;
   position: relative;
   top: 150px;
   border-radius: 10px;
@@ -81,17 +81,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    line-height: 64px;
+    align-items: center;
+    padding: 0 26px;
 
     .contacts_text {
-      color: red;
+      color: rgb(0,255,255);
       font-size: 25px;
-      margin-left: 40px;
     }
 
     .blink_battery {
-      -webkit-animation: blink_battery 0.5s linear infinite;
-      animation: blink_battery 0.5s linear infinite;
+      //-webkit-animation: blink_battery 0.5s linear infinite;
+      //animation: blink_battery 0.5s linear infinite;
     }
 
     .blink {
@@ -102,7 +102,6 @@
     .contacts_signatures {
       font-size: 25px;
       text-align: right;
-      margin-right: 20px;
       color: white;
       text-decoration: none;
     }
@@ -132,7 +131,7 @@
       * {box-sizing: border-box;}
 
       .ui-form {
-        max-width: 400px;
+        width: 100%;
         padding: 20px 20px 30px;
       }
       .ui-form h3 {
@@ -168,6 +167,7 @@
         border-bottom: 90px solid #ffe3b5;
       }
       .form-row {
+        z-index: 10;
         position: relative;
         margin-bottom: 25px;
       }
@@ -224,4 +224,100 @@
       margin-top: 50px;
     }
   }
+
+  .errorMessage {
+    color: red;
+    font-size: 10px;
+  }
+
+  .mapiFrame {
+    border: 3px solid #01c853;
+    border-radius: 10px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 970px) {
+  #contacts {
+    width: 90% !important;
+    top: 15px !important;
+    height: unset !important;
+    padding: 0 0 15px 0;
+    margin: 0 auto !important;
+  }
+
+  .mapiFrame {
+    height: unset !important;
+  }
+
+  .ui-form input[type="submit"] {
+    line-height: 35px !important;
+    font-size: 16px !important;
+  }
+
+  .ui-form p {
+    padding-top: 0 !important;
+  }
+
+  .form-row {
+    margin-bottom: 12px !important;
+  }
+
+  .form-row label {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+
+  .form-row input:focus + label,
+  .form-row input:valid + label {
+    transform: translateY(-45px) !important;
+    font-size: 10px !important;
+  }
+
+  .container_contacts {
+    flex-direction: column !important;
+    height: unset !important;
+
+    .left_side {
+      margin-top: 15px !important;
+      width: 100% !important;
+    }
+
+    .right_side {
+      width: 100% !important;
+      margin-top: unset !important;
+    }
+  }
+
+  .ui-form {
+    padding: 8px !important;
+  }
+
+  .contacts_header {
+    height: 45px !important;
+    align-items: center !important;
+    line-height: unset !important;
+
+    .contacts_text {
+      font-size: 20px !important;
+    }
+  }
+
+  .ui-form h3 {
+    display: none !important;
+  }
+
+  /*.ui-form h3:before {
+    left: 60px;
+    top: -30px;
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .ui-form h3:after {
+    right: 50px;
+    top: -40px;
+    border-left: 35px solid transparent !important;
+    border-right: 35px solid transparent !important;
+    border-bottom: 60px solid #ffe3b5 !important;
+  }*/
 }

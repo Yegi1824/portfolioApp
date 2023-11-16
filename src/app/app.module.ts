@@ -5,7 +5,6 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 
-
 import {AppComponent} from './app.component';
 import {HeaderComponents} from "./header/header.components";
 import {AboutComponents} from "./aboutMe/about.components";
@@ -14,8 +13,9 @@ import {PortfolioComponent} from './portfolio/portfolio.component';
 import {EducationComponent} from './education/education.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { CvComponentComponent } from './portfolio/projects/cv-component/cv-component.component';
-import { ModalComponent } from './portfolio/modal/modal/modal.component';
+import {FooterMenuComponent} from "./footer-menu/footer-menu.component";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 const appRouts: Routes = [
   {path: '', redirectTo: 'about', pathMatch: 'full'},
@@ -24,7 +24,6 @@ const appRouts: Routes = [
   {path: 'portfolio', component: PortfolioComponent},
   {path: 'education', component: EducationComponent},
   {path: 'contacts', component: ContactsComponent},
-  {path: 'portfolio/cv', component: CvComponentComponent}
 ]
 
 @NgModule({
@@ -33,11 +32,10 @@ const appRouts: Routes = [
     HeaderComponents,
     AboutComponents,
     SkillsComponent,
+    FooterMenuComponent,
     PortfolioComponent,
     EducationComponent,
-    ContactsComponent,
-    CvComponentComponent,
-    ModalComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,8 +43,10 @@ const appRouts: Routes = [
     FontAwesomeModule,
     [BrowserAnimationsModule],
     FormsModule,
+    MatSnackBarModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,8 +3,9 @@
   height: 100vh;
   background: url("https://scx2.b-cdn.net/gfx/news/hires/2019/2-nature.jpg")fixed no-repeat;
   background-size: cover;
+  overflow: hidden;
+
   .wrap {
-    width: 940px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;

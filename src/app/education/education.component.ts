@@ -1,5 +1,5 @@
 import {Component, HostBinding} from '@angular/core';
-import {faShareAlt, faMinus, faBatteryQuarter} from '@fortawesome/free-solid-svg-icons';
+import {faShareAlt, faMinus, faBatteryQuarter, faBuildingColumns} from '@fortawesome/free-solid-svg-icons';
 import {routingAnimation} from "../shared/animations/routing-animation";
 
 @Component({
@@ -12,6 +12,7 @@ import {routingAnimation} from "../shared/animations/routing-animation";
 export class EducationComponent {
   faBatteryQuarter = faBatteryQuarter;
   faMinus = faMinus;
+  faBuildingColumns = faBuildingColumns;
   faShareAlt = faShareAlt;
   @HostBinding('@routingAnimation') private routing = {};
 }

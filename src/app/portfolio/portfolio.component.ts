@@ -1,5 +1,5 @@
 import {Component, HostBinding} from '@angular/core';
-import { faShareAlt, faMinus, faBatteryHalf, faEye, faBars} from '@fortawesome/free-solid-svg-icons';
+import { faShareAlt, faMinus, faBatteryHalf, faEye, faBars, faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import {routingAnimation} from "../shared/animations/routing-animation";
 import {Router} from "@angular/router";
 
@@ -18,12 +18,8 @@ export class PortfolioComponent {
   faEye = faEye;
   faBars = faBars;
   bShowProject = false;
+  faBriefcase = faBriefcase;
   @HostBinding('@routingAnimation') private routing = {};
   constructor(private router: Router) {
-  }
-
-  onOpenProject (nID) {
-    // this.router.navigate(['./portfolio/cv'])
-    this.bShowProject = true
   }
 }

@@ -1,5 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
-import { faShareAlt, faMinus, faBatteryThreeQuarters, faCog, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faShareAlt, faMinus, faBatteryThreeQuarters, faCog, faBook, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import {routingAnimation} from "../shared/animations/routing-animation";
 
 @Component({
@@ -15,5 +15,6 @@ export class SkillsComponent {
   faShareAlt = faShareAlt;
   faCog = faCog;
   faBook = faBook;
+  faUserTie = faUserTie;
   @HostBinding('@routingAnimation') private routing = {};
 }

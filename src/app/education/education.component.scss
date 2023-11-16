@@ -3,7 +3,7 @@
     color: black;
   }
   50% {
-    color: orangered;
+    color: rgb(218,112,214);
   }
   0% {
     color: black;
@@ -15,7 +15,7 @@
     color: black;
   }
   50% {
-    color: orangered;
+    color: rgb(218,112,214);
   }
   0% {
     color: black;
@@ -58,14 +58,14 @@
 
 
 #education {
-  opacity: 0.8;
-  width: 100%;
+  opacity: 0.9;
+  width: 940px;
+  margin: 0 auto;
   height: 570px;
   background-color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03),
   0 3px 1px -2px rgba(0, 0, 0, 0.03),
   0 1px 5px 0 rgba(0, 0, 0, 0.03);
-  margin-bottom: 30px !important;
   position: relative;
   top: 150px;
   border-radius: 10px;
@@ -77,12 +77,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    line-height: 64px;
+    align-items: center;
+    padding: 0 26px;
 
     .education_text {
-      color: orangered;
+      color: rgb(218,112,214);
       font-size: 25px;
-      margin-left: 40px;
     }
 
     #blink {
@@ -93,7 +93,6 @@
     .education_signatures {
       font-size: 25px;
       text-align: right;
-      margin-right: 20px;
       color: white;
       text-decoration: none;
     }
@@ -234,7 +233,7 @@
 
           &::after {
             position: relative;
-            top: -130px;
+            top: -110px;
             left: 340px;
             display: inline-block;
             border-top: 10px solid transparent;
@@ -266,7 +265,7 @@
 
           &::after {
             position: relative;
-            top: -110px;
+            top: -130px;
             right: 12px;
             display: inline-block;
             border-top: 10px solid transparent;
@@ -310,5 +309,129 @@
 
   }
 
+
+}
+
+@media (max-width: 970px) {
+  #education {
+    width: 90% !important;
+    top: 15px !important;
+    height: unset !important;
+    padding: 0 0 15px 0;
+    margin: 0 auto !important;
+  }
+
+  .education_header {
+    height: 45px !important;
+    align-items: center !important;
+    line-height: unset !important;
+
+    .education_text {
+      font-size: 20px !important;
+    }
+  }
+
+  .container_education {
+    width: 90% !important;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: unset !important;
+
+    &::before {
+      top: 45px !important;
+      bottom: 0 !important;
+      position: absolute;
+      content: " ";
+      width: 1px;
+      left: 50%;
+      background: #bababa;
+    }
+
+    .education_block {
+      margin-top: 15px !important;
+
+
+      .text_inside {
+        padding: 8px !important;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .first_text {
+          font-size: 14px !important;
+        }
+
+        .second_text {
+          font-size: 10px !important;
+          margin-top: 8px !important;
+        }
+
+        .third_text {
+          font-size: 12px !important;
+          margin-top: 14px !important;
+        }
+      }
+
+      .education_left {
+        width: 50%;
+
+        .circle_1 {
+          display: none !important;
+        }
+
+        .circle_2 {
+          display: none !important;
+        }
+
+        .circle_3 {
+          display: none !important;
+        }
+
+        .circle_4 {
+          display: none !important;
+        }
+
+        .education_university {
+          height: auto !important;
+
+
+          &::after {
+            display: none !important;
+          }
+        }
+
+        .education_lvlup {
+          height: auto !important;
+
+          &::after {
+            display: none !important;
+          }
+        }
+
+      }
+
+      .education_right {
+        width: 50%;
+
+        .education_cambridge {
+          height: auto !important;
+
+          &::after {
+            display: none !important;
+          }
+        }
+
+        .education_school {
+          height: auto !important;
+
+          &::after {
+            display: none !important;
+          }
+        }
+
+      }
+    }
+  }
 
 }

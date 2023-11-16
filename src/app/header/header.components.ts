@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 const LIST: string[] = [
   'about', 'skills', 'portfolio', 'education', 'contacts'
@@ -14,6 +15,7 @@ export class HeaderComponents implements OnInit{
   public pathname: string = window.location.pathname;
   public list: string[] = LIST;
   public activeItem: string = '';
+  faBars = faBars;
 
   ngOnInit() {
     this.activeItem = this.pathname.split('/')[1];

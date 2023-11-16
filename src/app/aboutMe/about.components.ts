@@ -1,5 +1,5 @@
 import {Component, HostBinding} from '@angular/core';
-import {faBatteryFull, faCalendarCheck, faMinus, faShareAlt} from '@fortawesome/free-solid-svg-icons';
+import {faBatteryFull, faCalendarCheck, faMinus, faShareAlt, faHandPeace} from '@fortawesome/free-solid-svg-icons';
 import {faFacebookF, faGithub, faInstagram, faTelegramPlane} from '@fortawesome/free-brands-svg-icons';
 import {routingAnimation} from "../shared/animations/routing-animation";
 
@@ -17,7 +17,7 @@ const aoMyInfo_MOCK: myInfo_Model[] = [
   {
     sName: 'Age',
     sKey: 'age',
-    sValue: '22',
+    sValue: '23',
     sType: 'number'
   },
   {
@@ -29,7 +29,7 @@ const aoMyInfo_MOCK: myInfo_Model[] = [
   {
     sName: 'Email',
     sKey: 'email',
-    sValue: 'Egorkaishchenko@gmail.com',
+    sValue: 'egorkaishchenko@gmail.com',
     sType: 'email'
   },
   {
@@ -62,6 +62,7 @@ export class AboutComponents {
   faTelegramPlane = faTelegramPlane;
   faGithub = faGithub;
   faCalendarCheck = faCalendarCheck;
+  faHandPeace = faHandPeace;
   @HostBinding('@routingAnimation') private routing = {};
 
   public aoMyInfo: myInfo_Model[] = aoMyInfo_MOCK;

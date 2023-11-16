@@ -2,11 +2,11 @@
   <div class="portfolio_header">
     <div class="portfolio_text">My Projects</div>
     <div class="portfolio_signatures">
-      <fa-icon [icon]="faBatteryHalf" style="color: orange"></fa-icon>
+      <fa-icon [icon]="faBriefcase" style="color: rgb(100,149,237)"></fa-icon>
     </div>
   </div>
-  <div class="container_portfolio" *ngIf="!bShowProject">
-    <div class="portfolio_block" (click)="onOpenProject(0)">
+  <div class="container_portfolio">
+    <div class="portfolio_block">
       <div class="block_bg"></div>
       <div class="block_footer">
         <div>CV</div>
@@ -72,9 +72,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="container_project" *ngIf="bShowProject">
-    <app-cv-component></app-cv-component>
   </div>
 </div>
 
